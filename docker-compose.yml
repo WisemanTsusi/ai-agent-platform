@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      AGENT_MAX_STEPS: 8
+      AGENT_DEFAULT_MODEL: reference-model
